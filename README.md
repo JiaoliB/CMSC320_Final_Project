@@ -56,6 +56,9 @@ We also found out that certain songs are put in multiple times because they have
 ```python
 df_unique = df.drop_duplicates(subset=["track_name", "album_name"])
 ```
+
+# Primary Analysis
+Based on the results of your exploration, choose a machine learning technique (e.g., classification, regression, clustering, etc.) that will help you answer the questions you posed in the introduction. Explain your reasoning.
 ### Hypothesis Test #1
 If a song is more danceable, then it will be more likely that the song will be popular, since people will be more motivated to dance to it, therefore increasing its popularity.  
 H0: Danceability has no affect on the song's popularity  
@@ -161,8 +164,6 @@ print("p_value:", p_value)
 print("chi_squared_value:", statistic)
 ```
 Conclusion of the chi-squared test: Since our p_value is 0.0, it is less than the alpha value of .05, so we reject the null hypothesis. Hence, the genre of the track does have an effect on whether or not it is explicit. A p-value of 0.0 indicates extremely strong evidence against the null hypothesis.
-# Primary Analysis
-Based on the results of your exploration, choose a machine learning technique (e.g., classification, regression, clustering, etc.) that will help you answer the questions you posed in the introduction. Explain your reasoning.
 ```python
 
 ```
